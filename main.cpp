@@ -1,8 +1,4 @@
-#include "2020/01/D01_2020.h"
-#include "2020/02/D02_2020.h"
-#include "2020/03/D03_2020.h"
-#include "2020/04/D04_2020.h"
-#include "2020/05/D05_2020.h"
+#include "Imports.h"
 
 void display2020Results() {
     D01_2020 d01_2020;
@@ -15,6 +11,8 @@ void display2020Results() {
     d04_2020.showResults(R"(C:\Users\Tibor\Desktop\advent-of-code-cpp\2020\04\D04_2020.txt)");
     D05_2020 d05_2020;
     d05_2020.showResults(R"(C:\Users\Tibor\Desktop\advent-of-code-cpp\2020\05\D05_2020.txt)");
+    D06_2020 d06_2020;
+    d06_2020.showResults(R"(C:\Users\Tibor\Desktop\advent-of-code-cpp\2020\06\D06_2020.txt)");
 }
 
 int main() {
