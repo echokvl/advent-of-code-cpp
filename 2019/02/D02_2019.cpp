@@ -50,6 +50,36 @@ int D02_2019::part2(std::string &path) {
 
     int result = 0;
 
+    int target = 19690720;
+
+    for (int noun = 0; noun < 100; noun++) {
+        for (int verb = 0; verb < 100; verb++) {
+            std::vector<int> memory = data;
+            memory[1] = noun;
+            memory[2] = verb;
+            for (int ip = 0; ip < memory.size(); ip += 4) {
+                int opcode = memory[ip];
+                int i1 = memory[ip + 1];
+                int i2 = memory[ip + 2];
+                int i3 = memory[ip + 3];
+                if (opcode == 1) {
+                    memory[i3] = memory[i1] + memory[i2];
+                } else if (opcode == 2) {
+                    memory[i3] = memory[i1] * memory[i2];
+                } else if (opcode == 99) {
+                    break;
+                }
+            }
+            if (memory[0] == target) {
+                result += (100 * noun) + verb;
+                break;
+            }
+        }
+        if (result != 0) {
+            break;
+        }
+    }
+
     return result;
 }
 
