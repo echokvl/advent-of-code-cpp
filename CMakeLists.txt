@@ -9,6 +9,9 @@ add_executable(advent_of_code_cpp
         Template.h
         Imports.h
 
+        2019/01/D01_2019.cpp
+        2019/02/D02_2019.cpp
+
         2020/01/D01_2020.cpp
         2020/02/D02_2020.cpp
         2020/03/D03_2020.cpp

@@ -5,18 +5,20 @@
 #include <string>
 #include <vector>
 #include <unordered_map>
+#include <unordered_set>
 #include <sstream>
 #include <fstream>
 
 struct Answers {
-    std::vector<std::unordered_map<char, int>> answers;
+    std::vector<std::unordered_map<char, int>> characters;
+    std::vector<int> lineCounts;
 };
 
 class D06_2020 {
 public:
     D06_2020() = default;
 
-    static std::vector<Answers> parseInput(std::string &path);
+    static Answers parseInput(std::string &path);
     static int part1(std::string &path);
     static int part2(std::string &path);
 
