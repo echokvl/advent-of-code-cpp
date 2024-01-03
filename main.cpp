@@ -5,6 +5,10 @@ void display2019Results() {
     d01_2019.showResults(R"(C:\Users\Tibor\Desktop\advent-of-code-cpp\2019\01\D01_2019.txt)");
     D02_2019 d02_2019;
     d02_2019.showResults(R"(C:\Users\Tibor\Desktop\advent-of-code-cpp\2019\02\D02_2019.txt)");
+    D03_2019 d03_2019;
+    d03_2019.showResults(R"(C:\Users\Tibor\Desktop\advent-of-code-cpp\2019\03\D03_2019.txt)");
+    D04_2019 d04_2019;
+    d04_2019.showResults(R"(C:\Users\Tibor\Desktop\advent-of-code-cpp\2019\04\D04_2019.txt)");
 }
 
 void display2020Results() {
