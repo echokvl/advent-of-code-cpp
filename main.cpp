@@ -1,48 +1,30 @@
-#include "Imports.h"
-
-void display2019Results() {
-    D01_2019 d01_2019;
-    d01_2019.showResults(R"(C:\Users\Tibor\Desktop\advent-of-code-cpp\2019\01\D01_2019.txt)");
-    D02_2019 d02_2019;
-    d02_2019.showResults(R"(C:\Users\Tibor\Desktop\advent-of-code-cpp\2019\02\D02_2019.txt)");
-    D03_2019 d03_2019;
-    d03_2019.showResults(R"(C:\Users\Tibor\Desktop\advent-of-code-cpp\2019\03\D03_2019.txt)");
-    D04_2019 d04_2019;
-    d04_2019.showResults(R"(C:\Users\Tibor\Desktop\advent-of-code-cpp\2019\04\D04_2019.txt)");
-}
-
-void display2020Results() {
-    D01_2020 d01_2020;
-    d01_2020.showResults(R"(C:\Users\Tibor\Desktop\advent-of-code-cpp\2020\01\D01_2020.txt)");
-    D02_2020 d02_2020;
-    d02_2020.showResults(R"(C:\Users\Tibor\Desktop\advent-of-code-cpp\2020\02\D02_2020.txt)");
-    D03_2020 d03_2020;
-    d03_2020.showResults(R"(C:\Users\Tibor\Desktop\advent-of-code-cpp\2020\03\D03_2020.txt)");
-    D04_2020 d04_2020;
-    d04_2020.showResults(R"(C:\Users\Tibor\Desktop\advent-of-code-cpp\2020\04\D04_2020.txt)");
-    D05_2020 d05_2020;
-    d05_2020.showResults(R"(C:\Users\Tibor\Desktop\advent-of-code-cpp\2020\05\D05_2020.txt)");
-    D06_2020 d06_2020;
-    d06_2020.showResults(R"(C:\Users\Tibor\Desktop\advent-of-code-cpp\2020\06\D06_2020.txt)");
-}
+#include "run/Runner.h"
 
 int main() {
     std::cout << "*** Advent of Code ***" << "\n\n";
 
     int choice;
-    std::cout << "Enter which AoC years result you want to see: (19/20)" << "\n";
+    std::cout << "Enter which AoC years result you want to see: (15/19/20/21)" << "\n";
     std::cin >> choice;
     std::cout << '\n';
 
+    Runner runner;
+
     switch (choice) {
+        case 15:
+            runner.run_2015();
+            break;
         case 19:
-            display2019Results();
+            runner.run_2019();
             break;
         case 20:
-            display2020Results();
+            runner.run_2020();
+            break;
+        case 21:
+            runner.run_2021();
             break;
         default:
-            std::cout << "This AoC year does not exist." << '\n';
+            std::cout << "This AoC year does not exist or is not implemented." << '\n';
             break;
     }
 
