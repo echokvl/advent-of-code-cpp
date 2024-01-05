@@ -15,6 +15,18 @@ void Runner::run_2015() {
     d06_2015.showResults(R"(C:\Users\Tibor\Desktop\advent-of-code-cpp\2015\06\D06_2015.txt)");
 }
 
+void Runner::run_2017() {
+    D01_2017 d01_2017;
+    d01_2017.showResults(R"(C:\Users\Tibor\Desktop\advent-of-code-cpp\2017\01\D01_2017.txt)");
+    D02_2017 d02_2017;
+    d02_2017.showResults(R"(C:\Users\Tibor\Desktop\advent-of-code-cpp\2017\02\D02_2017.txt)");
+}
+
+void Runner::run_2018() {
+    D01_2018 d01_2018;
+    d01_2018.showResults(R"(C:\Users\Tibor\Desktop\advent-of-code-cpp\2018\01\D01_2018.txt)");
+}
+
 void Runner::run_2019() {
     D01_2019 d01_2019;
     d01_2019.showResults(R"(C:\Users\Tibor\Desktop\advent-of-code-cpp\2019\01\D01_2019.txt)");
@@ -47,4 +59,7 @@ void Runner::run_2021() {
     D02_2021 d02_2021;
     d02_2021.showResults(R"(C:\Users\Tibor\Desktop\advent-of-code-cpp\2021\02\D02_2021.txt)");
 }
+
+
+
 
